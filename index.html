@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishk | Welcome To My PortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/response.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lato', sans-serif;
+            background: rgb(183, 190, 196)
+        }
+
+        .header {
+            /* width: 100vw; */
+            padding: 30px 0;
+            background: #f5f5f5;
+            border-top: 10px solid #778492;
+
+        }
+
+        .mypic {
+            border: 0;
+            vertical-align: middle;
+            height: 216px;
+            width: 207px;
+            /* width: 17%; */
+            /* height: auto; */
+            border-radius: 50%;
+            box-shadow: 6px 17px 17px grey;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            /* margin: 0 90px;
+            padding: 0 20px; */
+
+        }
+
+        .container .icons a {
+            background: #b0b7bf;
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container .icons a:hover {
+            background: lightslategrey;
+        }
+
+        .fa1 {
+            margin-right: 9px;
+        }
+
+        .container li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+            list-style: none;
+        }
+
+        .container li .fa {
+            font-size: 20px;
+            padding-top: 8px;
+        }
+
+        .top {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btn-container {
+            /* display: inline-block; */
+            padding: 6px 12px;
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            /* vertical-align: middle; */
+            cursor: pointer;
+            background-color: rgb(77, 153, 77);
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            float: right;
+            margin: 5px 151px;
+            margin-top: -127px;
+        }
+
+        .btn-container:hover {
+            background-color: rgb(55, 116, 55);
+        }
+
+        .name {
+            font-size: 40px;
+            font-weight: 700;
+            color: rgb(59, 60, 61);
+        }
+
+        .skill {
+            color: #b0b7bf;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: rgb(59, 60, 61);
+            margin-top: 17px;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .main-grid {
+           width: 85vw;
+            /* margin: 52px 61px; */
+            display: grid;
+            grid-gap: 1.5rem;
+            /* gap: 10px 20px; */
+            grid-template-columns: repeat(3, 1fr);
+            padding: 15px;
+            /* padding: 30px; */
+            margin: 5px auto;
+            margin-bottom: -20px;
+            margin-top: 20px;
+        }
+
+
+        .section-inner {
+            /* text-align: center; */
+            background: white;
+            padding: 20px;
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .primary {
+            grid-column: 1 / span 2;
+            width: 100%;
+        }
+
+        .secondary {
+            grid-column: 3;
+            width: 100%;
+        }
+
+        .main-grid .links li {
+            display: inline-block;
+            list-style: none;
+            padding: 6px 3px;
+            font-size: 17px;
+        }
+
+
+        .main-grid .links li a {
+            text-decoration: none;
+            color: green;
+        }
+
+        .fa2 {
+            color: #b0b7bf;
+        }
+
+        .main-grid .links li a:hover {
+            text-decoration: underline;
+        }
+
+        .level-bar {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .java {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 94%;
+        }
+
+        .cpp {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 87%;
+        }
+
+        .web-d {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 75%;
+        }
+
+        .js {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 69%;
+        }
+
+        .ds {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 85%;
+        }
+
+        .dart {
+            background-color: #4CAF50;
+            color: #4CAF50;
+            width: 77%;
+        }
+
+        .heya {
+            display: none;
+        }
+
+        .level-title:hover+.heya {
+            cursor: pointer;
+            display: block;
+            color: white;
+            background-color: #b0b7bf;
+        }
+
+        .latest-section img {
+            /* width: 363px;
+    height: 219px; */
+            width: 46%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .project-section img {
+            /* width: 363px;
+    height: 219px; */
+            width: 50%;
+            height: auto;
+        }
+
+        .project-section .img1 {
+            text-align: center;
+            margin-bottom: 41px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        .academic-section .marks-table td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        .main-grid .keys li {
+            list-style: circle;
+            padding: 6px 3px;
+            font-size: 17px;
+        }
+
+        .badge-section .badges {
+            text-align: center;
+            /* border-top-left-radius: 4px solid black; */
+            /* border: 2px solid black; */
+            border-left: 5px solid rgb(147, 172, 97);
+
+        }
+
+        .badge-section .badges img {
+            height: 112px;
+            width: 112px;
+        }
+
+        footer {
+            /* width: 100vw; */
+            padding: 21px 0;
+            background: #f5f5f5;
+            border-bottom: 10px solid #778492;
+            text-align: center;
+        }
+
+        .foot {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+
+        }
+        
+     
+
+    /* CSS for responsive website 
+    Media Queries are used */
+
+
+    @media (max-width:267px) {
+        body{
+      text-align: center;
+    }
+    .header{
+     align-items: center;
+    }
+        .main-grid{
+        display: grid;
+        grid-gap: 1.5rem;
+        /* gap: 10px 20px; */
+    width: 87vw;
+    margin:5px auto;
+    grid-template-columns: 1fr;
+    /* margin : 20px 30px; */
+    margin-top: 20px;
+    padding: 6px;
+    margin-bottom: -20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .container .icons{
+        margin-left: -37px;
+    }
+.primary {
+        grid-column:1;
+        width: 84vw;
+    }
+    .mypic {
+        width: 151px;
+    }
+    .secondary {
+        grid-column:1;
+        width: 84vw;
+    }
+    .btn-container {
+      display: none;
+    }
+    h1,h2,h3,h4{
+        font-size: 12px;
+    }
+    .links {
+    display: none;
+    }
+    .badge-section .scroll{
+        height: 175px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+    }
+   
+}
+
+
+    @media (min-width: 268px )and (max-width:500px) {
+        body{
+      text-align: center;
+    }
+    .header{
+     align-items: center;
+    }
+        .main-grid{
+        display: grid;
+        grid-gap: 1.5rem;
+        /* gap: 10px 20px; */
+    width: 87vw;
+    margin:5px auto;
+    grid-template-columns: 1fr;
+    /* margin : 20px 30px; */
+    margin-top: 20px;
+    padding: 6px;
+    margin-bottom: -20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .container .icons{
+        margin-left: -37px;
+    }
+.primary {
+        grid-column:1;
+        width: 84vw;
+    }
+    .mypic {
+        width: 151px;
+    }
+    .secondary {
+        grid-column:1;
+        width: 84vw;
+    }
+    .btn-container {
+      display: none;
+    }
+    .badge-section .scroll{
+        height: 175px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+    }
+   
+}
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media (min-width: 501px )and (max-width:600px) {
+    body{
+      text-align: center;
+    }
+    .header{
+     align-items: center;
+    }
+    .main-grid{
+        display: grid;
+        grid-gap: 1.5rem;
+        /* gap: 10px 20px; */
+    width: 85vw;
+    margin:5px auto;
+    grid-template-columns: 1fr;
+    /* margin : 20px 30px; */
+    margin-top: 20px;
+    padding: 6px;
+    margin-bottom: -20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .container .icons{
+        margin-left: -37px;
+    }
+.primary {
+        grid-column:1;
+        width: 100%;
+    }
+    .mypic {
+        width: 151px;
+    }
+    .secondary {
+        grid-column:1;
+        width: 100%;
+    }
+    .btn-container {
+      display: none;
+    }
+}
+
+@media (min-width: 601px )and (max-width:761px) {
+
+    .mypic {
+       margin-left: 54px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+    .main-grid{
+        width: 87vw;
+        }
+        .badge-section .scroll{
+            height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn-container {
+            display: none;
+          }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 767px )and (max-width:930px) {
+    .main-grid{
+        width: 87vw;
+        }
+    .badge-section .scroll{
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    .btn-container {
+        display: none;
+      }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 931px) {
+ 
+    .main-grid{
+        width: 87vw;
+       
+        }
+        .badge-section .scroll{
+            height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .project-section .img1{
+            text-align: center;
+            margin-bottom: 41px;
+             }
+             .btn-container {
+                display: block;
+              }
+         
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+    .main-grid{
+    width: 87vw;
+    }
+    .project-section .img1{
+        text-align: center;
+        margin-bottom: 41px;
+         }
+         .badge-section .scroll{
+            all: unset;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <!-- header  -->
+    <header class="header">
+        <!-- <h2 id='user' style="text-align: center; ">
+            </h3> -->
+            <div class="container">
+                <img src="/img/mycartoon.jpeg" class="mypic" alt="Kanishk - PortFolio">
+                <div class="top">
+                    <h1 class="name">Kanishk</h1>
+                    <h3 class="skill">Web Developer</h3>
+
+                    <ul class="icons">
+                        <li class="items"> <a href="https://www.facebook.com/kanishk.pglu" target="_blank"> <i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="items"><a href="https://www.instagram.com/ka9ishq/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="items"><a href="https://twitter.com/Ka9ishk143/" target="_blank"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="items"><a href="https://www.linkedin.com/in/kanishk-9743b21a3/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="items"><a href="https://github.com/ka9ishk/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="items"><a href="https://ka9ishk.github.io/code-x/" target="_blank"><i class="fa fa-edge" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <button id="contact" class="btn-container" onclick="openal()"><i class="fa fa-send fa1"
+                    aria-hidden="true"></i>CONTACT ME</button>
+    </header>
+    <!-- main body  -->
+    <div class="main-grid">
+        <!-- primary  -->
+        <div class="primary">
+            <!-- about section  -->
+            <section class="about-section ">
+                <div class="section-inner">
+                    <h2 class="heading">About Me</h2>
+                    <div class="content">
+                        <p>I'm a passionate developer who always enjoys interesting projects and challenges. I love to
+                            work on web, mobile and related technologies. Currently I'm working on Java and I love it!
+                        </p>
+                        <p>I also love spending time keeping myself up to date with tech news, gadgets and sometimes
+                            attending different webinars. On spare time, I play video games, or watch WEB series and
+                            YouTube. I also like to draw sketches, and trying to invest more time to be better at it.
+                        </p>
+                        <p>I am looking for new opportunities at the moment, however, feel free to reach out to me for
+                            any kind of help and support.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- qualifications  -->
+            <section class="academic-section ">
+                <div class="section-inner">
+                    <h2 class="heading">Academic Qualification</h2>
+                    <div class="content my-table" style="overflow-x:auto;">
+                        <table class="marks-table">
+                            <tr>
+                                <td>
+                                    <h4>School/
+                                        College Name</h4>
+                                </td>
+                                <td>
+                                    <h4>Degree</h4>
+                                </td>
+                                <td>
+                                    <h4>Year of
+                                        Passing</h4>
+                                </td>
+                                <td>
+                                    <h4>Marks/
+                                        Cgpa</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chandigarh University</td>
+                                <td>Persuing B.E(Cse)(Upto 6th semester)</td>
+                                <td>2021</td>
+                                <td>7.47 cgpa</td>
+                            </tr>
+                            <tr>
+                                <td>St. Xavier's School</td>
+                                <td>Intermediate</td>
+                                <td>2017</td>
+                                <td>67.8 %</td>
+                            </tr>
+                            <tr>
+                                <td>St. Xavier's School</td>
+                                <td>Matriculate</td>
+                                <td>2015</td>
+                                <td>9.5 cgpa</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!-- latest section  -->
+            <section class="latest-section">
+                <div class="section-inner">
+                    <h2 class="heading">Latest Project</h2>
+                    <div class="content">
+                        <p>created a Blog (code-X) having latest information about tech fields and tech hacks.</p>
+                        <p>Languages Used : HTML , CSS , JavaScript , BootStrap , Node.JS , MongoDB</p>
+                        <p>It was a great experience during the complete execution and development of this project.</p>
+                        <p>Some ScreenShots of my Blog : </p>
+                        <img src="/img/Screenshot 1.png" alt="ss1">
+                        <img src="/img/Screenshot2.png" alt="ss2">
+                        <img src="/img/Screenshot3.png" alt="ss3">
+                    </div>
+                </div>
+            </section>
+            <!-- project-section -->
+            <section class="project-section">
+                <div class="section-inner img1">
+                    <h2 class="heading">Previous Projects</h2>
+                    <div class="content">
+                        <p> <strong>1 .</strong> Bricks & Ball game </p>
+                        <div class="img1">
+                            <img src="/img/redball.png" alt="game"></div>
+                        <p><b>2 .</b> jdbc-mysql connector </p>
+                        <div class="img1">
+                            <img src="/img/sql-jdbc.png" alt="jdbc connector"></div>
+                        <p><b>3 .</b> Face-Recognition System </p>
+                        <div class="img1">
+                            <img src="/img/face.png" alt="face recognition"></div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- secondary  -->
+        <div class="secondary">
+            <!-- links  -->
+            <section class="links">
+                <div class="section-inner">
+                    <ul class=" brdr">
+                        <li><i class="fa fa-map-marker fa1 fa2"></i><span class="sr-only">Location:</span>Mohali,
+                            Gharuan Chandigarh</li>
+                        <li><i class="fa fa-envelope-o fa1 fa2"></i><span class="sr-only">Email:</span><a
+                                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxTXzhTWbtPRwVlgLSpmbqHGljgRxFTsFJHcQpxCPrwrStpbmNRwLCHCxpfXscqBNSPgrP"
+                                target="_blank">hello@kanishk.dev</a></li>
+                        <li><i class="fa fa-link fa1 fa2"></i><span class="sr-only">Website:</span><a
+                                href="https://ka9ishk.github.io/code-x/" target="_blank">codelikekanishk.com</a></li>
+                        <li><i class="fa fa-camera fa1 fa2" aria-hidden="true"></i><span
+                                class="sr-only">Portfolio:</span><a href="#">vision.kanishk.com</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- skills -->
+            <aside class="skills">
+                <div class="section-inner">
+                    <h2 class="heading">Skills</h2>
+                    <div class="content">
+                        <p class="intro">
+                            I’ve been working as a fresher for over <b>1.5+</b> years. Initially I started with
+                            Programming Languages and later migrated to Competitive Coding.Now I started learning
+                            web-development.</p>
+                        <p><i class="fa fa-hand-o-up"></i> <u>Move Cursor on <b>skill level</b></u> to get more details.
+                        </p>
+
+                        <div class="skillset">
+
+                            <div class="item">
+                                <h3 class="level-title">Java <i class="fa fa-info-circle fa1 fa2"
+                                        aria-hidden="true"></i></h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">Java Development having skills of
+                                    core and advance. Familiar with UI design, data binding, android support-lib and
+                                    popular 3rd party library like Servlet, Awt,Applet, Swing and so on.</div>
+
+                                <div class="level-bar">
+                                    <div class="level-bar-inner java">.</div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">C++ <i class="fa fa-info-circle fa1 fa2" aria-hidden="true"></i>
+                                </h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">Actively used well architectures
+                                    like vector,linked-list,strings,arrays,classes.</div>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner cpp">.
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Web-Development <i class="fa fa-info-circle fa1 fa2"
+                                        aria-hidden="true"></i></h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">Actively trying to learn more and
+                                    more.Working on projects for better results.</div>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner web-d">.
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">JavaScript <i class="fa fa-info-circle fa1 fa2"
+                                        aria-hidden="true"></i></h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">A good concept of making UI's for a
+                                    webpage.A brief Knowledge about events.</div>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner js">.
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Data Structures & Algorithms <i
+                                        class="fa fa-info-circle fa1 fa2" aria-hidden="true"></i></h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">It helps in understanding the nature
+                                    of the problem at a deeper level and thereby a better understanding of the world.
+                                    Solved 1500+ problems.</div>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner ds">.
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Dart <i class="fa fa-info-circle fa1 fa2"
+                                        aria-hidden="true"></i></h3>
+                                <div id="hoverme" class="heya" onmouseover="open()">It is used to build mobile, desktop,
+                                    server, and web applications. Dart is an object-oriented, garbage-collected language
+                                    with C-style syntax. Dart can compile to either native code or JavaScript.</div>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner dart">.
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                        </div>
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//section-inner-->
+            </aside>
+            <!-- key competency  -->
+            <section class="key-section ">
+                <div class="section-inner">
+                    <h2 class="heading">Key Competencies</h2>
+                    <div class="content">
+                        <ul class="keys">
+                            <li class="keys1">Problem Solving</li>
+                            <li class="keys1">TeamWork</li>
+                            <li class="keys1">Technical Support</li>
+                            <li class="keys1">Responsibility</li>
+                            <li class="keys1">Results Orientation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- purpose  -->
+            <section class="purpose-section ">
+                <div class="section-inner">
+                    <h2 class="heading">Purpose</h2>
+                    <div class="content">
+                        <p> <i class="fa fa-quote-left fa1 fa2" style="color: yellowgreen;"></i>As a web-developer , it
+                            doesn’t matter whether you’re a photographer, designer, writer, or something else entirely –
+                            if your hope is to get more freelance work and sign higher paying clients, you need to have
+                            a portfolio site that does a great job at communicating your strengths.</p>
+                        <p> The best way to show potential clients how you can help their businesses, is by giving them
+                            tangible examples of how you’ve helped others (or yourself) accomplish their goals in the
+                            past.</p>
+                        <h5> <i class="fa fa-circle fa1 fa2" style="color: yellowgreen;"></i> Kanishk </h5>
+                    </div>
+                </div>
+            </section>
+            <!-- badges  -->
+            <section class="badge-section ">
+                <div class="section-inner">
+                    <div class="scroll">
+                        <h2 style="text-align: center;" class="heading">Badges</h2>
+                        <div class="content">
+                            <div class="badges"><img src="/img/badge1.JPG" alt="badge"></div>
+                            <div class="badges"><img src="/img/badge2.JPG" alt="badge"></div>
+                            <div class="badges"><img src="/img/badge3.JPG" alt="badge"></div>
+                            <div class="badges"><img src="/img/badge4.JPG" alt="badge"></div>
+                            <div class="badges"><img src="/img/badge5.JPG" alt="badge"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- footer  -->
+    <footer>
+        <div class="foot"><i class="fa fa-quote-left fa1 fa2" style="color: yellowgreen;"></i>
+            <h2> Designed with <i class="fa fa-heart fa1 fa2" style="color:red;"></i>by KANISHK </h2><i
+                class="fa fa-quote-right fa1 fa2" style="color: yellowgreen;"></i>
+        </div>
+    </footer>
+    <script>
+        function openal() {
+            alert("You can check the details at the right-top of the screen");
+        }
+        let nme=prompt('Welcome to my portfolio\nPlease Enter Your Good Name:');
+        // nme=nme.toUpperCase();
+        // nme='WELCOME '+nme;
+        // document.getElementById('user').innerHTML=nme;
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8241227.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+
+</html>

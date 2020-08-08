@@ -1,0 +1,114 @@
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    body{
+      text-align: center;
+    }
+    .header{
+     align-items: center;
+    }
+    .main-grid{
+        display: grid;
+        grid-gap: 1rem;
+    width: 90vw;
+    grid-template-columns: 1fr;
+    margin: 20px 30px;
+    padding: 6px;
+    margin-bottom: -20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .container .icons{
+        margin-left: -37px;
+    }
+.primary {
+        grid-column:1;
+        width: 87vw;
+    }
+    .mypic {
+        width: 151px;
+    }
+    .secondary {
+        grid-column:1;
+        width: 87vw;
+    }
+    .btn-container {
+      display: none;
+    }
+}
+
+@media (min-width: 601px )and (max-width:761px) {
+
+    .mypic {
+       margin-left: 54px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+    .main-grid{
+        width: 90vw;
+        }
+        .badge-section .scroll{
+            height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn-container {
+            display: none;
+          }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 767px )and (max-width:930px) {
+    .badge-section .scroll{
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    .btn-container {
+        display: none;
+      }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 931px) {
+ 
+    .main-grid{
+        width: 90vw;
+       
+        }
+        .badge-section .scroll{
+            height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .project-section .img1{
+            text-align: center;
+            margin-bottom: 41px;
+             }
+             .btn-container {
+                display: block;
+              }
+         
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+    .main-grid{
+    width: 90vw;
+    }
+    .project-section .img1{
+        text-align: center;
+        margin-bottom: 41px;
+         }
+         .badge-section .scroll{
+            all: unset;
+        }
+}
